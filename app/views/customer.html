@@ -1,0 +1,16 @@
+<h2>{{customer.name}}'s Order</h2>
+<br/>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ProductName</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="order in customer.orders">
+            <td>{{order.productName}}</td>
+            <td>{{order.price | currency}}</td>
+        </tr>
+    </tbody>
+</table>
